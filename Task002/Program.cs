@@ -24,15 +24,6 @@ int GetNumber(string message)
     return result;
 }
 
-string WriteNubers(int m, int n)
-{
-    if (n == m) return ($"{m}");
-    else 
-    {
-       return WriteNubers(m, n - 1) + " " + n.ToString();
-    }
-}
-
 int GetSum(int m, int n)
 {
     if (n == m) return n;
@@ -41,8 +32,6 @@ int GetSum(int m, int n)
        return n + GetSum(m, n - 1);
     }
 }
-
-
 
 int m = GetNumber("Введите первое натуральное число:");
 int n = GetNumber("Введите второе натуральное число:");
